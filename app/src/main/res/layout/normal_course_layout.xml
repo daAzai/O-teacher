@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:text="常课安排"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/normal_recycler_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="50">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/subject_name"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/text_arrange_normal"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/subject_timenum"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_arrange_normal_timenum"/>
+
+            <Button
+                android:id="@+id/subject_requirements"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_arrange_normal_requirements"/>
+        </LinearLayout>
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
